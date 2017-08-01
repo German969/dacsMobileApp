@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearAddPedido"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/fechaNewPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_fecha"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/estadoNewPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_estado"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/usuarioNewPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_usuario"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/fechaPagoNewPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_fechapago"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/mediodepagoNewPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_mediodepago"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnNewPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addPedido"
+        android:text="@string/button_add" />
+
+    <LinearLayout
+        android:id="@+id/linearUpdatePedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputEditPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_id"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEditPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editPedido"
+            android:text="@string/button_update" />
+
+    </LinearLayout>
+
+</LinearLayout>

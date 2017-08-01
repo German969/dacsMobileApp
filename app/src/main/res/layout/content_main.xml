@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.german.org.dacs.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/app_title"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                tools:text="Select API" />
+
+            <Button
+                android:id="@+id/btnUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_usuario"
+                android:text="@string/label_usuario" />
+
+            <Button
+                android:id="@+id/btnProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_producto"
+                android:text="@string/label_producto" />
+
+            <Button
+                android:id="@+id/btnPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_pedido"
+                android:text="@string/label_pedido" />
+
+            <Button
+                android:id="@+id/btnRol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_rol"
+                android:text="@string/label_rol" />
+
+            <Button
+                android:id="@+id/btnProveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_proveedor"
+                android:text="@string/label_proveedor" />
+
+            <Button
+                android:id="@+id/btnCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_categoria"
+                android:text="@string/label_categoria" />
+
+            <Button
+                android:id="@+id/btnMediodepago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ejecutar_medioDePago"
+                android:text="@string/label_mediodepago" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

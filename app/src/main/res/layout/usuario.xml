@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputIdUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="23dp"
+
+                    android:ems="7"
+                    android:hint="@string/hint_id"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/findUsuarioById"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:onClick="findUsuarioById"
+                    android:text="@string/button_find" />
+
+                <Button
+                    android:id="@+id/btnDeleteUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="23dp"
+                    android:onClick="deleteUsuario"
+                    android:text="@string/button_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputNameUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="7"
+                    android:hint="@string/hint_name"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/findUsuarioByName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:onClick="findUsuarioByName"
+                    android:text="@string/button_find" />
+
+                <Button
+                    android:id="@+id/btnDeleteUsuarioByName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="13dp"
+                    android:onClick="deleteUsuarioByName"
+                    android:text="@string/button_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:onClick="ejecutar_add_usuario"
+                    android:text="@string/button_add" />
+
+                <Button
+                    android:id="@+id/btnFindAllUsuarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="21dp"
+
+                    android:onClick="showAllUsuarios"
+                    android:text="@string/button_getAll" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleUsuarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_usuarios"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/displayUsuarios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

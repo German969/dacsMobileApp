@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearAddProducto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/marcaNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_marca"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/descripcionNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_descripcion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/precioNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_precio"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/comisionNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_comision"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/stockNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_stock"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/categoriaNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_categoria"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/proveedorNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_proveedor"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnNewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addProducto"
+        android:text="@string/button_add" />
+
+    <LinearLayout
+        android:id="@+id/linearUpdateProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputEditProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_id"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEditProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editProducto"
+            android:text="@string/button_update" />
+
+    </LinearLayout>
+
+</LinearLayout>

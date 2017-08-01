@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearAddUsuario2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearAddUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nameNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/apellidoNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_apellido"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/cuitNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_cuit"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/emailNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/userNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_user"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/passwordNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_password"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/telefonoNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_telefono"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/paisNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_pais"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/provinciaNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_provincia"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/localidadNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_localidad"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/codigoPostalNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_codigoPostal"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/direccionNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_direccion"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/rolNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_rol"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnNewUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addUsuario"
+                android:text="@string/button_add" />
+
+            <LinearLayout
+                android:id="@+id/linearUpdateUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputEditUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_id"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnEditUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="editUsuario"
+                    android:text="@string/button_update" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearAddRol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameNewRol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnNewRol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addRol"
+        android:text="@string/button_add" />
+
+    <LinearLayout
+        android:id="@+id/linearUpdateRol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputEditRol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_id"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEditRol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editRol"
+            android:text="@string/button_update" />
+
+    </LinearLayout>
+
+</LinearLayout>

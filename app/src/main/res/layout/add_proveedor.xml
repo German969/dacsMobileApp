@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearAddProveedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameNewProveedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnNewProveedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addProveedor"
+        android:text="@string/button_add" />
+
+    <LinearLayout
+        android:id="@+id/linearUpdateProveedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputEditProveedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_id"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEditProveedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editProveedor"
+            android:text="@string/button_update" />
+
+    </LinearLayout>
+
+</LinearLayout>

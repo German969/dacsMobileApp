@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputIdMedioDePago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="23dp"
+
+                    android:ems="7"
+                    android:hint="@string/hint_id"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/findMedioDePagoById"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:onClick="findMedioDePagoById"
+                    android:text="@string/button_find" />
+
+                <Button
+                    android:id="@+id/btnDeleteMedioDePago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="23dp"
+                    android:onClick="deleteMedioDePago"
+                    android:text="@string/button_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputMedioDePagoName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/inputId"
+                    android:layout_below="@+id/inputId"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="7"
+                    android:hint="@string/hint_name"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/findMedioDePagoByName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:onClick="findMedioDePagoByName"
+                    android:text="@string/button_find" />
+
+                <Button
+                    android:id="@+id/btnDeleteMedioDePagoByName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="13dp"
+                    android:onClick="deleteMedioDePagoByName"
+                    android:text="@string/button_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddMedioDePago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:onClick="ejecutar_add_mediodepago"
+                    android:text="@string/button_add" />
+
+                <Button
+                    android:id="@+id/btnFindAllRoles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="21dp"
+
+                    android:onClick="showAllMediosDePago"
+                    android:text="@string/button_getAll" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleMedioDePago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_mediosDePago"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/displayMediosDePago"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
